@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">    <!-- appel du fichier CSS -->
+    <script src="meteo.js" async></script>      <!-- appel asynchrone du fichier JAVASCRIPT -->
+    <title>weather information</title>          <!-- titre de la page web -->
+</head>
+
+<body>
+    <div class="cadre">     <!-- conteneur pour le cadre de l'interface + attribut pour mise en forme sur CSS -->
+
+        <div class="meteo"> <!-- conteneur pour le bloc qui affichera les données météo de la ville selectionnée -->
+            <img src="icons_meteo/sun_01d.png" class="icons_meteo"> <!-- affichage interface d'un icon meteo -->
+            <h1 class="ville"> </h1>    <!-- affichage interface de la ville -->
+            <h2 class="temperature"> </h2>  <!-- affichage interface de la température -->
+
+            <div class="infos">    <!-- conteneur pour le bloc qui affichera l'humidité et le ressenti-->
+
+                <div class="colonne"> <!-- conteneur pour le bloc humidité -->
+                    <img src="icons_meteo/humidity.png" class="icons_humidite"> <!-- affichage icon humidité -->
+
+                    <div>
+                        <p>Humidité</p>
+                        <p class="humidite"> </p>  <!-- affichage du taux d'humidité -->
+                    </div>
+                </div>
+
+                <div class="colonne">
+                    <img src="icons_meteo/temperature_ressenti.png" class="icons_ressenti">
+
+                    <div>
+                        <p>Ressenti</p>
+                        <p class="ressenti"> </p> <!-- affichage de la température ressentie -->
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>
