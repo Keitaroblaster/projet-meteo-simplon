@@ -1,0 +1,50 @@
+body{   /* image de fond de la page web */
+    background-image: url(images_css/image_de_fond.jpeg);
+    background-size: cover;
+}
+
+.cadre{     /* mise en forme de l'interface */
+    width: 30%;
+    background: linear-gradient(135deg, rgba(0,254,186,0.5), rgba(91,84,138,0.5));  /* couleur de fond de l'interface en dégradé */
+    color: #fff;    /* couleur de la police */
+    margin: 150px auto;  
+    border-radius: 50px;    /* arrondi des angles de l'interface */
+    padding: auto;
+    text-align: center;
+}
+
+.meteo h1{  /* style de la police de la ville */
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.meteo h2{  /* style de la police de la température */
+    font-size: 45px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.infos{ /* mise en forme sur l'affichage de l'humidité et du ressenti */
+    display: flex;  /* permet de faire 2 colonnes*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 70px;
+}
+
+.colonne{   /* mise en forme et style de la police de l'humidité et du ressenti */
+    font-size: 25px;
+    font-weight: 500;
+    align-items:center;
+    text-align: center;
+}
+
+.icons_meteo{   /* mise en forme sur l'affichage de l'icon météo */
+    width: 40%;
+    margin-top: 30px ;
+}
+
+.icons_humidite,.icons_ressenti{    /* mise en forme sur l'affichage  des icons humidité et ressenti */
+    width: 20%;
+    margin: -10px;
+}
